@@ -9,10 +9,6 @@ import completionHandler from "./handlers/chat_handler";
 import cors from 'cors'
 import {InitOpenAi, Asr} from "./asr/asr";
 
-//process.env.PLAYHT_API_KEY
-console.log(`playht api key: ${typeof (process.env.PLAYHT_API_KEY)}`)
-console.log(`playht api key: ${process.env.PLAYHT_API_KEY}`)
-
 function main() {
     const app = express()
     app.use(cors({origin: '*'}))
