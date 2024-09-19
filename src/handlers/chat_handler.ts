@@ -83,7 +83,7 @@ const completionHandler = async (aia: string, message: string, history: string, 
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            model: "Llama-3-8B-Instruct",
+            model: process.env.MODEL,
             messages: messages,
             stream: true
         })
