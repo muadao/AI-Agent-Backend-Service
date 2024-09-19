@@ -17,26 +17,35 @@ is designed to be used with the GaiaNet platform, but can also be used with othe
 
 ## Features
 
-## Configuration
+* __Easy to use__ :  Set some variables, and you are ready to go.
+* __Scalable__ : No context stored, no database needed. 
+* __Low Latency__ : Really quick response thanks to SSE and streaming APIs. 
 
-### Environment Variables
+## Configuration
 
 Several environment variables are required to be set in the `.env` file. The following is an example of the required
 environment variables:
 
 ```bash
+# OpenAI API key for ASR service
 OPENAI_API_KEY=sk-...
 
+# Play.ht API key and user ID for TTS service
 PLAYHT_API_KEY=...
 PLAYHT_USER_ID=...
 
+# The backend service will listen on this port
 PORT=4242
-```
 
-### Agent Configs
+# GaiaNet LLM service
+LLM_SERVER="example.gaianet.network"
+# Make sure to set the correct model for the LLM service
+MODEL="Llama-3-8B-Instruct"
 
-```json
-
+# Agent specific configurations
+PROMPT="You're an expert in Web3. Try to answer what the user is asking in a simple way."
+# Voice clone ID for TTS service
+VOICE_CLONE_ID=""
 ```
 
 ## Compatibility
@@ -45,5 +54,5 @@ The default backend service is designed to be used with the GaiaNet platform.
 However, as GaiaNet applies to the OpenAI API, it's actually independent of GaiaNet and can be used with other
 compatible LLM services.
 
-To use the backend service with another LLM service, simply fill in ```llm_server``` in AI Agent Configs
-in ```./configs/aia_config.json``` with a compatible LLM service URL.
+To use the backend service with another LLM service, simply change the value of ```LLM_SERVER```
+in ```.env``` to a compatible LLM service URL.
