@@ -21,8 +21,8 @@ is designed to be used with the GaiaNet platform, but can also be used with othe
 * __Scalable__ : No context stored, no database needed. 
 * __Low Latency__ : Really quick response thanks to SSE and streaming APIs. 
 
-## Configuration
-
+## Configuration 
+### Setup
 Several environment variables are required to be set in the `.env` file. The following is an example of the required
 environment variables:
 
@@ -48,6 +48,9 @@ SYS_PROMPT="You're an expert in Web3. Try to answer what the user is asking in a
 VOICE_CLONE_ID=""
 ```
 
+### Customize the knowledgebase
+The knowledgebase is not stored locally on the server, it's instead retrieved by the Gaianet Node's inner API.
+So, if you need to customize the knowledgebase, you can deploy your own Gaianet Node.  
 ## Compatibility
 
 The default backend service is designed to be used with the GaiaNet platform.
