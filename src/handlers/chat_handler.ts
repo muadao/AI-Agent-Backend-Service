@@ -47,7 +47,7 @@ const stream2buffer = (stream: NodeJS.ReadableStream): Promise<Buffer> => {
 }
 
 const aiaConfig = {
-    prompt: process.env.PROMPT,
+    prompt: process.env.SYS_PROMPT,
     llm_server: process.env.LLM_SERVER,
     voice: process.env.VOICE_CLONE_ID
 }

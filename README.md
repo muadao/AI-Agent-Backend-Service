@@ -43,7 +43,7 @@ LLM_SERVER="example.gaianet.network"
 MODEL="Llama-3-8B-Instruct"
 
 # Agent specific configurations
-PROMPT="You're an expert in Web3. Try to answer what the user is asking in a simple way."
+SYS_PROMPT="You're an expert in Web3. Try to answer what the user is asking in a simple way."
 # Voice clone ID for TTS service
 VOICE_CLONE_ID=""
 ```
