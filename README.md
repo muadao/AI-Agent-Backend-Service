@@ -50,7 +50,7 @@ VOICE_CLONE_ID=""
 
 ### Customize the knowledgebase
 The knowledgebase is not stored locally on the server, it's instead retrieved by the Gaianet Node's inner API.
-So, if you need to customize the knowledgebase, you can deploy your own Gaianet Node.  
+So, if you need to customize the knowledgebase, you can deploy your own [Gaianet Node]("https://github.com/GaiaNet-AI/gaianet-node").  
 ## Compatibility
 
 The default backend service is designed to be used with the GaiaNet platform.
